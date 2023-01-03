@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ header {
+   font-size: 35px;
+   background-color: mistyrose;
+   color: dimgrey;
+   height: 70px;
+   width: 1000px;
+   padding-top: 10px;
+   padding-left: 10px;
+   margin-top: 10px;
+   font-family: sans-serif;
+   font-weight: bold;
+}
+
+table {
+   font-family: sans-serif;
+   padding: 0.5em 1em;
+   margin: 2em 0;
+   font-weight: bold;
+   color: dimgrey;/*文字色*/
+   background: #FFF;
+   border: solid 3px dimgrey;/*線*/
+   border-collapse:  collapse; /* セルの線を重ねる */
+   text-align: center;
+}
+
+th,td {
+   border: solid 2px;  /* 枠線指定 */
+   padding: 7px;      /* 余白指定 */
+   text-align: center;
+   font-size: 15px;
+}
+
+h3 {
+   font-size: 25px;
+   font-weight: bold;
+   font-family: sans-serif;
+   color: dimgrey;
+   padding-top: 30px;
+   margin-left: 30px;
+}
+
+ul {
+   font-family: sans-serif;
+   list-style: none;
+}
+
+p {
+   font-family: sans-serif;
+}
+
+label {
+   font-family: sans-serif;
+   padding-bottom: 20px;
+   margin: 20px;
+   text-align: center;
+}
+
+div {
+   padding-left: 10px;
+}
+
+footer {
+  font-size: 30px;
+  background-color: mistyrose;
+  color: dimgrey;
+  height: 70px;
+  width: 1000px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 250px;
+}
