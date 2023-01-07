@@ -1,5 +1,10 @@
 <h3>スケジュール編集</h3>
 
+<%= flash[:notice] %>
+<%= flash[:alert] %>
+
+<%= render "shared/error", obj: @post %>
+
 <%= form_for @post do |f| %>
 
   <table>
@@ -42,3 +47,8 @@
     </ul>
   </div>
 <% end %>
+
+<div class = footer>
+  現在の時刻：<%= Time.now.strftime("%H:%M") %>
+</div>
+

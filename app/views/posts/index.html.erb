@@ -1,5 +1,8 @@
 <h3>スケジュール一覧</h3>
 
+<%= flash[:notice] %>
+<%= flash[:alert] %>
+
 <table>
   <thead>
     <tr>
@@ -51,4 +54,13 @@
 </table>
 
 <p><%= link_to "スケジュール新規作成", new_post_path %></p>
+
+
+
+<div class = footer>
+  現在の時刻：<%= Time.now.strftime("%H:%M") %>  スケジュール合計： <%= @post_count %>
+</div>
+
+
+
 

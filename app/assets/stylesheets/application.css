@@ -29,7 +29,7 @@
 
 table {
    font-family: sans-serif;
-   padding: 0.5em 1em;
+   padding: 10px 1em;
    margin: 2em 0;
    font-weight: bold;
    color: dimgrey;/*文字色*/
@@ -75,7 +75,7 @@ div {
    padding-left: 10px;
 }
 
-footer {
+.footer {
   font-size: 30px;
   background-color: mistyrose;
   color: dimgrey;
@@ -85,5 +85,5 @@ footer {
   padding-left: 10px;
   font-family: sans-serif;
   font-weight: bold;
-  margin-top: 250px;
+  margin-top: 100px;
 }
