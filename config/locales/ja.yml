@@ -7,3 +7,7 @@ ja:
         title: タイトル
         start_at: 開始日
         end_at: 終了日
+        update_schedule: 投稿日時
+    time:
+    formats:
+      default: "%Y/%m/%d %H:%M:%S"
