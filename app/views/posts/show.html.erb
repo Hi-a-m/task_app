@@ -9,13 +9,13 @@
 
   <tr>
     <th>開始日</th>
-    <td><%= @post.start_at %></td>
+    <td><%= @post.start_at.strftime("%Y年%m月%d日") %></td>
   </tr>
 
 
   <tr>
-    <th>投稿日時</th>
-    <td><%= @post.update_schedule %></td>
+    <th>更新日時</th>
+    <td><%= @post.updated_at.strftime("%Y年%m月%d日%H時%M分") %></td>
   </tr>
 
   <tr>
@@ -43,3 +43,10 @@
     <li><%= link_to "スケジュールを編集する", edit_post_path(@post.id) %></li>
     <li><%= link_to "スケジュールを削除", post_path, method: :delete, data: { confirm: "本当に削除しますか？" } %></li>
   </ul>
+
+
+<div class = footer>
+  本日の日付：<%= Date.today.strftime("%Y年%m月%d日") %>
+</div>
+
+

@@ -1,5 +1,9 @@
 <h3>スケジュール新規作成</h3>
 
+<%= flash[:notice] %>
+<%= flash[:alert] %>
+
+<%= render "shared/error", obj: @post %>
 
 <%= form_for @post do |f| %>
 
@@ -38,8 +42,13 @@
 
   <div>
     <ul>
-      <li><%= f.submit "スケジュールの編集を完了する" %></li>
+      <li><%= f.submit "スケジュールを新規登録する" %></li>
       <li><%= link_to "スケジュール一覧に戻る", posts_path %></li>
     </ul>
   </div>
 <% end %>
+
+<div class = footer>
+  本日の日付：<%= Date.today.strftime("%Y年%m月%d日") %>
+</div>
+
